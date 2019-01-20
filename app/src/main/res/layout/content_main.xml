@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/image_viewer_vp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.pagerindicator.PagerIndicator
+        android:id="@+id/image_viewer_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:border_color="@android:color/holo_green_light"
+        app:border_width="1dp"
+        app:circle_radius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:margin_item="2dp"
+        app:normal_color="@android:color/holo_blue_light"
+        app:number_of_page="5"
+        app:selected_color="@android:color/holo_red_light" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

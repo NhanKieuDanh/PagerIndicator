@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="PagerIndicator">
+        <attr name="number_of_page" format="integer" />
+        <attr name="current_page" format="integer" />
+
+        <attr name="border_color" format="color" />
+        <attr name="normal_color" format="color" />
+        <attr name="selected_color" format="color" />
+
+        <attr name="border_width" format="dimension" />
+        <attr name="circle_radius" format="dimension" />
+        <attr name="margin_item" format="dimension" />
+
+    </declare-styleable>
+</resources>
